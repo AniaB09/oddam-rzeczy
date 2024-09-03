@@ -30,7 +30,7 @@ function HomeHeader() {
                     </ul>
                     <ul className='nav second-row'>
                         <ScrollLink to='header' className='nav-element'>Start</ScrollLink>
-                        <ScrollLink to='three-columns' className='nav-element'>O co chodzi?</ScrollLink>
+                        <ScrollLink to='steps' className='nav-element'>O co chodzi?</ScrollLink>
                         <ScrollLink to='about' className='nav-element'>O nas</ScrollLink>
                         <ScrollLink to='organizations' className='nav-element'>Fundacje i organizacje</ScrollLink>
                         <ScrollLink to='contact' className='nav-element'>Kontakt</ScrollLink>
