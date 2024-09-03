@@ -38,16 +38,16 @@ function HomeHeader() {
                 </nav>
 
                 <div className='hero'>
-                    <h1>Zacznij pomagać!<br />
+                    <h2>Zacznij pomagać!<br />
                         Oddaj niechciane rzeczy w zaufane ręce!
-                    </h1>
+                    </h2>
                     <img src={decoration} alt='decoration-element' />
                     <div className='buttons-container'>
                         <div className='button-border'>
-                            <button>ODDAJ<br />RZECZY</button>
+                            <Link to='/logging' className='button'>ODDAJ<br />RZECZY</Link>
                         </div>
                         <div className='button-border'>
-                            <button>ZORGANIZUJ<br />ZBIÓRKĘ</button>
+                            <Link to='/logging' className='button'>ZORGANIZUJ<br />ZBIÓRKĘ</Link>
                         </div>
                     </div>
                 </div>
