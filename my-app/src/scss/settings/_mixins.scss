@@ -1,3 +1,6 @@
+@import "colors";
+
+
 @mixin notebook {
   @media (max-width: 1352px) {
     @content;
@@ -14,4 +17,21 @@
   @media (max-width: 792px) {
     @content;
   }
+}
+
+@mixin subtitles {
+  font-size: 38px;
+  color: $text-color;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 25px;
+}
+
+@mixin subtitles-mobile {
+  font-size: 24px;
+  color: $text-color;
+  text-align: center;
+  white-space: normal;
+  line-height: 30px;
 }
