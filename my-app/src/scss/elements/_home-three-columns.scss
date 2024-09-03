@@ -1,0 +1,54 @@
+@import '../settings/mixins';
+@import "../settings/colors";
+@import "../settings/fonts";
+
+.three-columns {
+  background: $important-color;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 80px;
+    color: $number-color;
+
+    @include mobile {
+      font-size: 60px;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: $text-color;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: $font-alt;
+    text-align: center;
+    padding: 40px;
+    color: $text-color;
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+}
