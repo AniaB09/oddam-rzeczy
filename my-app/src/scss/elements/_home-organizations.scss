@@ -1,0 +1,134 @@
+@import '../settings/mixins';
+@import '../settings/fonts';
+
+.organizations-section {
+  @include tablet {
+    padding: 0 15px;
+  }
+}
+
+.organizations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    @include subtitles;
+    margin-top: 55px;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    @include mobile {
+      @include subtitles-mobile;
+    }
+  }
+
+  .buttons-container-org {
+    margin-top: 50px;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 3vw;
+      margin-top: 30px;
+    }
+  }
+
+  button {
+    border: none;
+    background: none;
+    width: 130px;
+    height: 70px;
+    margin: 0 15px;
+
+    @include mobile {
+
+      width: inherit;
+      height: inherit;
+      margin: 0;
+      padding: 15px 30px;
+    }
+  }
+
+  p {
+    text-align: center;
+    padding: 0 20vw;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      font-size: 16px;
+      padding: 0 10vw;
+    }
+  }
+}
+
+.foundations-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-list-el {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid lightgrey;
+  padding: 20px 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .org-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40vw;
+    align-items: center;
+    font-family: $font-alt;
+  }
+
+  .org-name {
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .org-needs {
+    font-size: 16px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+
+.pages-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 60px;
+
+  button {
+    border: none;
+    background: none;
+    padding: 10px;
+  }
+}
