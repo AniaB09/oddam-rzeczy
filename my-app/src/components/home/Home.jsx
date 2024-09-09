@@ -4,6 +4,7 @@ import HomeThreeColumns from "./HomeThreeColumns.jsx";
 import HomeSteps from "./HomeSteps.jsx";
 import HomeAboutUs from "./HomeAboutUs.jsx";
 import HomeOrganizations from "./HomeOrganizations.jsx";
+import HomeContact from "./HomeContact.jsx";
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <HomeSteps />
             <HomeAboutUs />
             <HomeOrganizations />
+            <HomeContact />
         </>
     )
 }

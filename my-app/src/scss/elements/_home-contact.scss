@@ -1,0 +1,147 @@
+@import "../settings/mixins";
+
+.contact-footer-section {
+  margin-top: 30px;
+}
+
+.contact-form-container {
+  position: relative;
+}
+
+.contact-form-section {
+  position: absolute;
+  top: 10vw;
+  right: 8vw;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 80px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+  }
+
+  .form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      @include subtitles;
+
+      @include mobile {
+        @include subtitles-mobile;
+      }
+    }
+
+    p {
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.clothes-image {
+  width: 100%;
+  opacity: 30%;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.name-email-container {
+  display: flex;
+  gap: 1vw;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  #name, #email {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+#message {
+  background: none;
+  border: none;
+  border-bottom: 2px solid grey;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.error-messages {
+  color: red;
+  margin-bottom: 20px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  #send-button {
+    border: 2px solid grey;
+    background: none;
+    padding: 10px 30px;
+  }
+}
+
+.footer-section {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5vw;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+  }
+
+  .icons-container {
+    display: flex;
+    gap: 1vw;
+
+    @include tablet {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
